@@ -17,7 +17,7 @@ class CreatePedidosTable extends Migration
             $table->id();
             $table->char('numPdo',6);
             $table->string('nomCliente');
-            $table->boolean('estado');
+            $table->boolean('estado')->default(false);
             $table->timestamps();
         });
     }
