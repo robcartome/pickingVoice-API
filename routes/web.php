@@ -16,3 +16,6 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/pedidos', 'PedidoController@index');
+$router->get('/pedidos/{numPdo}', 'PedidoController@show');
