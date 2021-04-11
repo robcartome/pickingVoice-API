@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "f61c87ef-c109-4f06-88dc-a19fe232c143",
+		"name": "picking-voice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "pedidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/pickingVoice/public/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pickingVoice",
+						"public",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showPedido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/pickingVoice/public/pedido/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pickingVoice",
+						"public",
+						"pedido",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEstadoDetallePedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "estado",
+							"value": "false",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/pickingVoice/public/pedido/2/item/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pickingVoice",
+						"public",
+						"pedido",
+						"2",
+						"item",
+						"6"
+					],
+					"query": [
+						{
+							"key": "estado",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEstadoPedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "estado",
+							"value": "false",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/pickingVoice/public/pedido/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"pickingVoice",
+						"public",
+						"pedido",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
