@@ -1,11 +1,14 @@
 # API para trabajar con un picking de voz
 Urls:
-- Se muestran todos los pedidos 
+- Se muestran todos los pedidos  
 http://server_name/pickingVoice/public/pedidos  | GET
-- Muestra los items que tiene un pedido 
+
+- Muestra los items que tiene un pedido  
 http://server_name/pickingVoice/public/pedido/{idPdo}  | GET
+
 - Actualiza el estado del item del pedido (True o False) = (Alistado o Por Alistar)
 http://server_namet/pickingVoice/public/pedido/{idPdo}/item/{idItem} | POST
+
 - Saber si el estado del pedido se actualizo (Estado:true) = (Pedido Completado) Se completan si los estados de los items estan todos en (true) = Alistado
 http://server_name/pickingVoice/public/pedido/{idPdo} | POST
 
