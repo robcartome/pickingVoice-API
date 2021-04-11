@@ -19,4 +19,5 @@ $router->get('/', function () use ($router) {
 
 $router->get('/pedidos', 'PedidoController@index');
 $router->get('/pedido/{idPdo}', 'PedidoController@showProductos');
-$router->post('/pedido/{idPdo}/item/{idItem}','PedidoController@updateDetallePedido');
+$router->post('/pedido/{idPdo}/item/{idItem}','PedidoController@updateEstadoDetalle');
+$router->post('/pedido/{idPdo}','PedidoController@updateEstadoPedido');
