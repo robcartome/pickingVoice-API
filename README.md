@@ -9,7 +9,7 @@ http://server_name/pickingVoice/public/pedido/{idPdo}  | GET
 - Actualiza el estado del item del pedido (True o False) = (Alistado o Por Alistar)
 http://server_namet/pickingVoice/public/pedido/{idPdo}/item/{idItem} | POST
 
-- Saber si el estado del pedido se actualizo (Estado:true) = (Pedido Completado) Se completan si los estados de los items estan todos en (true) = Alistado
+- Ver el estado del pedido (Estado:true) = (Pedido Completado).Se completan si los estados de los items estan todos en (true) = Alistado          
 http://server_name/pickingVoice/public/pedido/{idPdo} | POST
 
 pst: Se entrega un archivo para visualizar las urls en Postman
