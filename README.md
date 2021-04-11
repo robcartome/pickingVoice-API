@@ -1,4 +1,6 @@
-# API para trabajar con un picking de voz
+# API para trabajar con un picking
+Respuestas para ver Pedidos, Ver un pedido en especial y poder informar si esta alistado o no.
+
 Urls:
 - Se muestran todos los pedidos  
 http://server_name/pickingVoice/public/pedidos  | GET
@@ -13,6 +15,15 @@ http://server_namet/pickingVoice/public/pedido/{idPdo}/item/{idItem} | POST
 http://server_name/pickingVoice/public/pedido/{idPdo} | POST
 
 pst: Se entrega un archivo para visualizar las urls en Postman
+
+En local: 
+- Crear un BD en phpmyadmin
+- Configurar el .env
+
+En la terminal del proyecto: Ejecutar
+- php artisan migrate
+- php artisan 
+- php artisan db:seed
 
 # Lumen PHP Framework
 
