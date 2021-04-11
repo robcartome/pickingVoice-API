@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Pedido;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +14,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call('UsersTableSeeder');
+        $this->call([
+            PedidoSeeder::class,
+            UbicacionSeeder::class,
+            ProductoSeeder::class,
+            PedidoProductoSeeder::class,
+            ]);
     }
 }
